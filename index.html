@@ -3,69 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Caetano & Calheiros Veículos, venha conferir nossos preços únicos e imperdíveis, somos mais de 6 lojas parceiras em toda Alagoas dispostas à realizar o seu sonho. Venha descobrir nossas incríveis propostas!">
     <title>Caetano & Calheiros Veículos</title>
-     <!-- Font Awesome CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Caetano & Calheiros Veículos, venha conferir nossos preços únicos e imperdíveis, somos mais de 6 lojas parceiras em toda Alagoas dispostas à realizar o seu sonho. Venha descobrir nossas incríveis propostas!">
+    <link rel="shortcut icon" href="src/imagens/favicon/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/style.css">
-
-    <link rel="shortcut icon" href="src/imagens/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-     <!-- Font Awesome JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
-     integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
-     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <header class="header">
-        <nav class="menu">
+    <header>
+        <img src="src/imagens/logo.png" alt="Logo da loja" class="logo">
+        <nav>
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#location">Localização</a></li>
+                <li><a href="https://www.instagram.com/caetanoecalheirosveiculos/" target="_blank">Contato</a></li>
             </ul>
-
-            <img src="src/imagens/logo.png" alt="" class="logo">
         </nav>
     </header>
 
     <main>
-        <section class="container-veiculos">
-            <div class="veiculo">
-                <img src="src/imagens/veiculos/Polo4.png" alt="" class="foto-veiculo">
-                <h3>Volkswagen Polo 1.0 Tsi Highline 200 Aut. 5p</h3>
-                <h4>R$78000 <span>em até 60x</span></h4>
-                <h5><a href="https://w.app/E4kMIZ" target="_blank">Tenho interesse <i class="fa-solid fa-arrow-right"></i></a></h5>
-            </div>
+        <h2>Mais vendidos</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <article class="car-card">
+                    <img src="https://placehold.co/600x500" alt="Fiat Strada">
+                    <div class="car-info">
+                        <h3 class="car-title">Fiat Strada 2023</h3>
+                        <p>Picape compacta versátil e econômica.</p>
+                        <p class="car-price">R$ 79.990</p>
+                    </div>
+                </article>
 
-            <div class="veiculo">
-                <img src="src/imagens/veiculos/Honda-removebg-preview.png" alt="" class="foto-veiculo">
-                <h3>Titan 160 2024</h3>
-                <h4>R$24.000 <span>entradas de R$2000</span></h4>
-                <h5><a href="https://w.app/E4kMIZ" target="_blank">Tenho interesse <i class="fa-solid fa-arrow-right"></i></a></h5>
-            </div>
+                <article class="car-card">
+                    <img src="https://placehold.co/600x500" alt="Chevrolet Onix">
+                    <div class="car-info">
+                        <h3 class="car-title">Chevrolet Onix 2023</h3>
+                        <p>Hatch compacto com ótimo custo-benefício.</p>
+                        <p class="car-price">R$ 68.390</p>
+                    </div>
+                </article>
 
-            <div class="veiculo">
-                <img src="src/imagens/veiculos/Pcx-removebg-preview (2).png" alt="" class="foto-veiculo">
-                <h3>PCX 2024</h3>
-                <h4>R$22.000 <span>em até 60x</span></h4>
-                <h5><a href="https://w.app/E4kMIZ" target="_blank">Tenho interesse <i class="fa-solid fa-arrow-right"></i></a></h5>
+                <article class="car-card">
+                    <img src="https://placehold.co/600x500" alt="Hyundai HB20">
+                    <div class="car-info">
+                        <h3 class="car-title">Hyundai HB20 2023</h3>
+                        <p>Compacto moderno com design atraente.</p>
+                        <p class="car-price">R$ 69.990</p>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <img src="https://placehold.co/600x500" alt="Volkswagen T-Cross">
+                    <div class="car-info">
+                        <h3 class="car-title">Volkswagen T-Cross 2023</h3>
+                        <p>SUV compacto com tecnologia alemã.</p>
+                        <p class="car-price">R$ 116.550</p>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <img src="https://placehold.co/600x500" alt="Jeep Compass">
+                    <div class="car-info">
+                        <h3 class="car-title">Jeep Compass 2023</h3>
+                        <p>SUV médio com capacidade off-road.</p>
+                        <p class="car-price">R$ 149.990</p>
+                    </div>
+                </article>
+            </div>
+            <button class="carousel-control prev">&lt;</button>
+            <button class="carousel-control next">&gt;</button>
+        </div>
+<br>
+
+        <h2>Carros em Destaque</h2>
+        <section class="car-grid">
+            <article class="car-card2">
+                <img src="src/imagens/veiculos/S10.jpg" alt="Luxury Sedan">
+                <div class="car-info">
+                    <h3 class="car-title">S10 2013</h3>
+                    <p>Imponente e confiável, a S10 2013 oferece potência e conforto em um só pacote.</p>
+                    <p class="car-price">R$75,000</p>
+                </div>
+            </article>
+            <article class="car-card2">
+                <img src="src/imagens/veiculos/Strada.jpg" alt="Sports Car">
+                <div class="car-info">
+                    <h3 class="car-title">Strada working 2020</h3>
+                    <p>Robusta e versátil, a escolha ideal para quem busca praticidade no trabalho e agilidade no dia a dia.</p>
+                    <p class="car-price">R$120,000</p>
+                </div>
+            </article>
+            <article class="car-card2">
+                <a href="">
+                    <img src="src/imagens/veiculos/TITAN.JPG" alt="Electric SUV">
+                    <div class="car-info">
+                        <h3 class="car-title">Titan 160 2024</h3>
+                        <p>Moderna e econômica, a Titan 160 2024 combina design arrojado com tecnologia avançada.</p>
+                        <p class="car-price">R$25,000</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="location-info">
+                <h2>Nossa Localização</h2>
+                <p>Estamos localizados em um ponto estratégico da cidade, <br> prontos para atendê-lo com o melhor em veículos seminovos de alta qualidade.</p>
+                <address>
+                    Av. Lourival Melo Mota, 5265<br>
+                    Santos Dumont, Maceió - AL<br>
+                    CEP: 57075-000<br>
+                    <br>
+                    Telefone: (82) 99143-8676<br>
+                    Email: calheirosceiculos@gmail.com
+                </address>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="rodape">
-            <div>
-                <p>© Caetano & Calheiros-2024</p>
-            </div>
-        </div>
+        <p>&copy; 2023 Caetano & Calheiros Veículos. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
