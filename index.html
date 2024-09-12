@@ -123,5 +123,40 @@
     <footer>
         <p>&copy; 2023 Caetano & Calheiros Veículos. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Carrossel
+        const carousel = document.querySelector('.carousel-inner');
+        const cards = document.querySelectorAll('.car-card');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
+
+        function showCard(index) {
+            currentIndex = index;
+            const offset = -index * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % cards.length;
+            showCard(currentIndex);
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            showCard(currentIndex);
+        }
+
+        prevBtn.addEventListener('click', prevCard);
+        nextBtn.addEventListener('click', nextCard);
+
+        // Adicionar navegação por teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') prevCard();
+            if (e.key === 'ArrowRight') nextCard();
+        });
+        </script>
 </body>
 </html>
