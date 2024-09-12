@@ -1,0 +1,28 @@
+.container-veiculos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 6rem;
+    gap: 1rem;
+}
+
+.veiculo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: solid black;
+}
+
+.veiculo h5 a{
+    text-decoration: none;
+    color: azure;
+}
+.foto-veiculo{
+    width: 15rem;
+}
